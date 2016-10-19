@@ -1,0 +1,10 @@
+Konstribusi :
+1. membuat method makeblocks
+method tersebut digunakan untuk membuat blok (dengan ukuran 64 bit) setelah plaintext di konversi menjadi binary. Apabila jumlah bit bukan merupakan kelipatan 8 maka akan ditambahkan bit "11111111" sebanyak jumlah bit yang kurang. Nantinya blok-blok tersebut akan di encrypt menggunakan algoritma DES
+
+2. membuat method encrypt
+method tersebut merupakan method utama, dimana method ini berfungsi untuk mengenkripsi plaintext ke chipertext. Pada method ini diawali dengan penggunaan foreach untuk plaintextblocks, dimana akan mengeluarkan plaintext tiap 64bit yang nantinya akan di enkripsi. setelah itu plaintext akan di kenai matrix IP dan dipecah menjadi 2 bagian yaitu kiri dan kanan. Untuk memperoleh keynya dilakukan dengan fungsi tertentu sebanyak 16 kali.
+
+3. membuat class MainDES
+pada class ini berisi program utama enkripsi DES dimana kita menginputkan plaintext dan key nya
+
